@@ -1,4 +1,4 @@
-[SITE teste]
+[SITE]
 
 Curiosidades de Tecnologia
 
