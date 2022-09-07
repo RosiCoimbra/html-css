@@ -20,15 +20,22 @@
         padding: 10px;
     }
     td, tr{
-        border: 1px solid gray;
+        border: 1px solid black;
         padding: 10px;
         text-align: center;
     }
     th {
         background-color: gray;
         color: white;
+        border: 1px solid black;
     }
-   
+    td.destaque {
+        font-weight: bold;
+    }
+   th.media {
+       text-align: left;
+       border: 1px solid black;
+   }
 </style>
 <body>
     <h1>Desafio 14 - Tabelas</h1>
@@ -51,7 +58,7 @@
         </thead>
         <tbody>
             <tr>
-                <td rowspan="5" scope="row">Exatas</td>
+                <td rowspan="5" scope="row"  class="destaque">Exatas</td>
                     <tr>
                         <td>Matemática</td>
                         <td>0.0</td>
@@ -78,11 +85,11 @@
                     </tr>
             </tr>
             <tr>
-                <th colspan="4">Média de Exatas</th>
-                <th>1000</th>
+                <th colspan="4" class="media">Média de Exatas</th>
+                <th>0.0</th>
             </tr>
             <tr>
-                <td rowspan="3">Humanas</td>
+                <td rowspan="3" class="destaque">Humanas</td>
                 <tr>
                     <td>Historia</td>
                     <td>0.0</td>
@@ -97,10 +104,9 @@
                 </tr>
             </tr>
             <tr>
-                <th colspan="4">Média de Humanas</th>
-                <th>1000</th>
+                <th colspan="4" class="media">Média de Humanas</th>
+                <th>0.0</th>
             </tr>
-         
         </tbody>
         
     </table>
